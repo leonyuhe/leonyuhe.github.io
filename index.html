@@ -32,6 +32,9 @@
 <a id="leonyuhegithubio" class="anchor" href="#leonyuhegithubio" aria-hidden="true"><span class="octicon octicon-link"></span></a>leonyuhe.github.io</h1>
 
 <p>blog</p>
+　　　　{% for post in site.posts %}
+　　　　　　<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+　　　　{% endfor %}
         </section>
 
         <aside id="sidebar">
